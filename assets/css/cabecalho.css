@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+:root{
+    --black : #000;
+    --black-transparent : #00000077;
+    --blue : #0077ff;
+    --gray : #aaaaaa;
+    --green : #169d16;
+    --hover : aqua;
+    --red : #c20000;
+    --white : #fff;
+    --white-transparent : #ffffffaa;
+}
+
+body{
+    height: calc(100vh - 80px);
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.cabecalho {
+    align-items: center;
+    background-color: var(--black);
+    box-shadow: 0px 5px 5px var(--gray);
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 2rem;
+}
+
+.cabecalho .logo {
+    width: 80px;
+}
+
+.cabecalho .lista {
+    list-style: none;
+}
+
+.cabecalho .lista .cadastrar {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    transform: uppercase;
+    transition: 1s;
+}
+
+.cabecalho .lista .item:hover {
+    transform: scale(1.01);
+}
+
+.cabecalho .lista .cadastrar:hover {
+    text-decoration: underline;
+    color: var(--hover);
+}
+
+

@@ -1,0 +1,178 @@
+/* Todas as animações estarão aqui*/
+
+@keyframes rolar {
+    100% {
+        background-position: 100%;
+    }
+}
+
+/* Ambos as páginas utilizam para estilizar a parte do main, com o fundo com animação*/
+
+.principal {
+    animation: rolar 20s alternate infinite;
+    align-items: center;
+    background: linear-gradient(45deg, #aa0000, #aa4200, #666600, #004000, #0000aa, #4a044a);
+    background-size: 400%;
+    background-position: 0%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 200px);
+}
+
+/* Aqui será localizado a parte do index.php*/
+
+.novo {
+    background-color: var(--white-transparent);
+    border: 1px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    max-width: 500px;
+    padding: 2rem;
+    width: 80%;
+}
+
+.titulo {
+    font-size: 2rem;
+}
+
+.subtitulo {
+    font-size: 1.5rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.marcador {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+}
+
+.entrada {
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px var(--black);
+}
+
+.validar {
+    color: var(--red);
+    margin-top: .2rem;
+    margin-left: 10px;
+}
+
+.botoes {
+    display: flex;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.botao {
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px var(--black);
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem 0 0;
+    padding: .5rem 2rem;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.botao:hover {
+    transform: scale(1.05);
+}
+
+.botao {
+    background-color: var(--blue);
+}
+
+.botao:nth-child(even) {
+    background-color: var(--green);
+}
+
+.botao.cancelar {
+    background-color: var(--red);
+}
+
+
+/* aqui será criado estilização da página de listar todos os clientes */
+
+.cadastros {
+    background: var(--white-transparent);
+    display: flex;
+    min-height: calc(100% - 64px);
+    justify-content: center;
+    padding: 2rem;
+    width: 80%;
+}
+
+
+.cadastros .atributo {
+    border: 1px solid;
+    width: max(150px, 25%);
+    text-align: center;
+}
+
+.cadastros .atributo:not(:first-child) {
+    border-left: none;
+}
+
+
+.cadastros .titulo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: .5rem;
+}
+
+.cadastro__itens {
+    margin-top: 1rem;
+}
+
+.cadastros--container {
+    display: flex;
+    border: 1px solid;
+    border-left: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 70px;
+}
+
+.cadastros--editar {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    height: 100%;
+    width: 35px;
+}
+
+.cadastros--links:hover{
+    transform: scale(1.1);
+}
+
+.cadastro--excluir__svg {
+    color: var(--red);
+    height: 20px;
+    margin-top: .9rem;
+}
+
+.cadastro--editar__svg {
+    color: var(--blue);
+    height: 20px;
+    margin-top: .9rem;
+}
+
+.cadastros--links:active{
+    color: inherit;
+}
+
+.cadastros--links:visited{
+    color: inherit;
+}
