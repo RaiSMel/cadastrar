@@ -16,7 +16,7 @@
 <li>Entrar no explorar no  Explorador de arquivos, após a intalação do XAMPP, procure por C:\xampp\htdocs</li>
 <li>Todos os arquivos html,css, php e js que estiverem nessa pasta poderâo ser hospedados para visualização pela LAN, coloque os arquivos dentro de uma pasta dentro de htdocs </li>
 <li>Abra o painel do XAMPP e ligue o APACHE e o MySQL, clique em admin no MySQL </li>
-<li>Abra a aba SQL e digite "CREATE DATABASE bd", após isso clique em bd e depois na aba importar e selecione o arquivo cadastro.sql</li>
+<li>Abra a aba SQL e digite "CREATE DATABASE bd", após isso clique em bd e depois na aba importar, selecione o arquivo cadastro.sql para importar a tabela no banco de dados</li>
 <li>Depois va no browser e digite na url "localhost/(Nome da sua pasta)</li>
 </ol>
 
