@@ -1,5 +1,14 @@
 # cadastrar
 
+## Roteiro I
+
+![image](https://github.com/RaiSMel/cadastrar/assets/93801960/33669b1b-3aa8-4f53-84e2-9e415f0b5673)
+
+## Roteiro II
+
+![image](https://github.com/RaiSMel/cadastrar/assets/93801960/31174f18-0306-42fd-a1b4-cf0807645817)
+
+
 ## Como utilizar no meu próprio ambiente?
 
 <ol>
