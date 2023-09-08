@@ -37,6 +37,7 @@
 
 .titulo {
     font-size: 2rem;
+    height: 22px;
 }
 
 .subtitulo {
@@ -116,8 +117,9 @@
 
 .cadastros .atributo {
     border: 1px solid;
-    width: max(150px, 25%);
+    padding: 0 .5rem;
     text-align: center;
+    width: 25%;
 }
 
 .cadastros .atributo:not(:first-child) {
@@ -141,6 +143,7 @@
     border-left: none;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top:.5rem ;
     text-align: center;
     width: 70px;
 }
@@ -153,26 +156,46 @@
     width: 35px;
 }
 
-.cadastros--links:hover{
+.cadastros--links:hover {
     transform: scale(1.1);
 }
 
 .cadastro--excluir__svg {
     color: var(--red);
     height: 20px;
-    margin-top: .9rem;
+    margin-top: .5rem;
 }
 
 .cadastro--editar__svg {
     color: var(--blue);
     height: 20px;
-    margin-top: .9rem;
+    margin-top: .5rem;
 }
 
-.cadastros--links:active{
+.cadastros--links:active {
     color: inherit;
 }
 
-.cadastros--links:visited{
+.cadastros--links:visited {
     color: inherit;
+}
+
+@media screen and (max-width: 800px) {
+    .cadastros {
+        width: 100vw;
+        padding: 2rem 0;
+    }
+
+    .cadastros .atributo {
+        width: auto;
+        padding: .5rem;
+    }
+
+    .cadastro__itens {
+        font-size: .8rem;
+    }
+
+    .cadastros--editar {
+        width: auto;
+    }
 }

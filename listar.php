@@ -26,7 +26,7 @@
 
             ?>
                 <div class="nomes atributo">
-                    <p class="titulo">Nome</p>
+                    <h3 class="titulo">Nome</h3>
                     <?php
 
                     foreach ($valores as $valor) {
@@ -35,7 +35,7 @@
                     ?>
                 </div>
                 <div class="emails atributo">
-                    <p class="titulo">Email</p>
+                    <h3 class="titulo">Email</h3>
                     <?php
                     foreach ($valores as $valor) {
                         echo "<p class='cadastro__itens'>" . $valor['Email'] . "</p>";
@@ -43,7 +43,7 @@
                     ?>
                 </div>
                 <div class="dataCadast atributo">
-                    <p class="titulo">Data</p>
+                    <h3 class="titulo">Data</h3>
                     <?php
                     foreach ($valores as $valor) {
                         $Nota = $valor['dataCadastro'];
@@ -55,7 +55,7 @@
                     ?>
                 </div>
                 <div class="cadastros--container">
-                    <p class="titulo">Editar</p>
+                    <h3 class="titulo">Editar</h3>
                     <div class="cadastros--editar">
 
                         <?php

@@ -25,10 +25,10 @@
 
 
                 <label for="nome" class="marcador">Nome: </label>
-                <input name="nome" type="text" class="entrada" autocomplete="on" data-tipo="nome" required>
+                <input name="nome" id="nome" type="text" minlength="3" maxlength="10" class="entrada" autocomplete="on" data-tipo="nome" pattern="[A-zÀ-ú\s]+" required>
 
                 <label for="email" class="marcador">Email: </label>
-                <input name="email" type="text" class="entrada" autocomplete="on" data-tipo="email" required>
+                <input name="email" id="email" type="email" minlength="5" maxlength="20" class="entrada" autocomplete="on" data-tipo="email" required>
                 <p class="validar" data-validar></p>
                 <div class="botoes">
                     <a role="button" class="botao listar" href="./listar.php">Listar</a>
